@@ -1,0 +1,195 @@
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(155, 180, 189);
+    background-image: url('PageBackground.png');
+    margin: 0;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    font-family: "Arial Black";
+    font-size: 40px;
+    padding-bottom: 55px;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    background-image: url('HeaderBackground.png');
+    margin-right: auto;
+    text-align: center;
+    
+  }
+
+  .header p {
+      position: absolute;
+      text-shadow: 1px 3px 1px #18191a;
+      left: 0px;
+      margin-top: -10px;
+      width: 1902px;
+  }
+  
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-family: "Arial Black";
+    text-shadow: 4px 4px 0px #18191a;
+    font-size: 80px;
+    width: 1902px;
+    margin-bottom: -4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(42, 75, 73);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: rgb(38, 99, 105);
+    color: black;
+  }
+  
+  /* Active/current link */
+  .navbar a.active {
+    background-color: rgb(38, 99, 105);
+    color: white;
+  }
+
+  #block0 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 900px;
+    height: 300px;
+    border: thick solid rgb(72, 141, 145);
+    text-shadow: 3px 3px 0px rgb(72, 141, 145);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 30%);
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 40px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-family: "Arial Black";
+    background-image: url('Block0.jpg');
+  }
+
+#block1 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 900px;
+    height: 300px;
+    border: thick solid rgb(99, 75, 110);
+    text-shadow: 3px 3px 0px rgb(99, 75, 110);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 30%);
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 40px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-family: "Arial Black";
+    background-image: url('Block1.jpg');
+    
+
+}
+
+#block2 {
+    vertical-align: top;
+    background-color: rgb(154, 194, 202);
+    display: inline-block;
+    text-align: center;
+    width: 900px;
+    height: 300px;
+    border: thick solid rgb(117, 79, 79);
+    text-shadow: 3px 3px 0px rgb(117, 79, 79);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 30%);
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 40px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-family: "Arial Black";
+    background-image: url('Block2.jpg');
+    
+   
+}
+
+#block3 {
+    vertical-align: top;
+    background-color: rgb(154, 194, 202);
+    display: inline-block;
+    text-align: center;
+    width: 900px;
+    height: 300px;
+    border: thick solid rgb(241, 214, 57);;
+    text-shadow: 3px 3px 0px rgb(187, 164, 33);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 30%);
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 40px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-family: "Arial Black";
+    background-image: url('Block3.jpg');
+    
+}
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+
+
+  }

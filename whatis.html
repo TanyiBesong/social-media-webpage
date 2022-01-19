@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<title>What is social media</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+  h1 {text-align: center;
+  text-decoration: underline;
+  padding: 5px 5px 5px 5px;
+ 
+        
+    } 
+ h2{ text-align: center;}
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.gallery__img {
+  text-align: center;
+  align-content: center;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  display: block; 
+}
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+#social {
+        text-align: center;
+  border: 5px groove #506a6e;
+  border-radius: 10px;
+  margin: 5px 5px 5px 5px;
+  padding: 50px 50px 5px 5px;
+ background-image: url(Timages/social.jpg);
+           } 
+#types {
+        text-align: center;
+  border: 5px groove #506a6e;
+  border-radius: 10px;
+  margin: 5px 5px 5px 5px;
+  padding: 50px 50px 5px 5px;
+ background-image: url(Timages/types.jpg);
+           }  
+#down {
+        text-align: center;
+  border: 5px groove #506a6e;
+  border-radius: 10px;
+  margin: 5px 5px 5px 5px;
+  padding: 50px 50px 5px 5px;
+ background-image: url(Timages/down.png);
+           }  
+ dt {border: 5px inset #506a6e;
+    border-radius: 10px;
+    border-width: 6px;
+    box-sizing: border-box; 
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    margin: 5px 5px 5px 5px;
+    }
+dd{ border-style: none inset none inset ;
+    border-radius: 10px;
+    border-width: 6px;
+    box-sizing: border-box; 
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    margin: 5px 5px 5px 5px;
+    border-color: #506a6e;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    }
+ form {border: none;
+    border-radius: 10px;
+    border-width: 6px;
+    box-sizing: border-box; 
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    margin: 5px 5px 5px 5px;}
+    dd:hover {background-color:black; color:white;}
+    
+ a {color:black;}
+    a:hover {color: #0000ff;
+    
+    }
+    .accordion {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: transparent;
+  overflow: hidden;
+  transition: max-height 2s ease-out;  
+}
+    .accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+    .click {
+        color: black;
+        text-align: center;
+    padding: none;
+       font-size: 15px; 
+    }
+    .arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+    .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="border:none;">Social Media</h1>
+  <p>on the web</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="whatis.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="#" class="right">Log in</a>
+  <a href="#" class="right">Sign up</a>
+</div>
+
+<br>
+    <h2 class="click"><i class="arrow down"></i>  Click buttons for more information  <i class="arrow down"></i></h2>
+     
+    
+    <h1> What is social Media?</h1> 
+    <button class="accordion">    <div id="social">   </div> </button>
+    <div class="panel">  <h2> Social media is a computer based technology that can be used for the sharing of ideas, thoughts, entertainment, and information through virtual networks and the communities that use them. social media are substantially different from the other media. In contrast to other media, they rather resemble dynamic, interconnected, egalitarian and interactive organisms beyond the control of any organization.</h2> 
+    
+    
+  
+    </div>
+<br>
+    
+    <h1> Types of social Media </h1>
+    <button class="accordion">   <div id="types">   </div> </button>
+<div class="panel">    <dl type="I">
+        
+   <button class="accordion"> <dt><h3>Social networking sites</h3></dt></button>
+      <div class="panel">  <dd>Social networking sites are the most popular because it allows people to connect with friends, family, and even brands. Some notable social media websites include Facebook, Twitter, LinkedIn, ect... These sites are all about human to human interaction. The cool thing about most sites like these is you can share thoughts, photos, videos, and even form groups based on similar interests.</dd> </div>
+        
+        <button class="accordion"> <dt><h3>Social review sites</h3></dt></button>
+      <div class="panel">  <dd>Social review sites are for users to give reviews of products, restaurants, hotels, amusement parks, really anything you can give an opinion on.Some examples of social review sites include Yelp and TripAdvisor. </dd> </div>
+        
+        <button class="accordion"> <dt><h3>Image sharing sites</h3></dt> </button>
+        <div class="panel">   <dd>Image sharing sites display images, infographics, and even illustrations that other people can view and react to. Some examples of image sharing sites include Instagram, Snapchat, and VSCO.</dd> </div>
+        
+        <button class="accordion">  <dt><h3>Video hosting sites</h3></dt></button>
+     <div class="panel">  <dd>These sites are made for users to watch and create videos and post them online for others to see. YouTube is a perfect example of a video hosting site and has grown exponentially since its launch in 2005. </dd> </div>
+        
+        <button class="accordion">  <dt><h3>Community blogs</h3></dt> </button>
+       <div class="panel">  <dd>Community blogs are a place for users to convey their thoughts or feelings on any topic online and other users can read and sometimes comment on these articles.</dd> </div>
+        
+        <button class="accordion">   <dt><h3>Discussion sites</h3></dt> </button>
+        <div class="panel"> <dd> Discussion sites are similar to community blogs but are designed to allow users to discuss certain specific topics. This can be helpful when trying to get information about a subject you don’t know much  about, because other users who know more about that subject can give you information without you even knowing them. These are different from most social media because there is less identifiable information for users and most stay anonymous. Examples of discussion sites include Reddit, ASK, and Quora. </dd> </div>
+        
+        <button class="accordion">   <dt><h3>Sharing economy networks</h3></dt> </button>
+        <div class="panel"> <dd style="border-bottom: outset; border-bottom-color: black;"> Sharing economy networks allow people to sell or rent out things to others. Two examples of sharing economy networks are AirBnB and Ebay. </dd> </div>
+    
+    </dl> </div>
+    <br>
+    <br>
+    
+    <h1> Examples of social media </h1>
+    <button class="accordion">     <div id="down">   </div> </button>
+  <div class="panel">   <div class="container">
+    <div class=”gallery”>
+  <figure class=”gallery__item gallery__item--1">
+     <a href="https://www.facebook.com/">                           
+            <h1 style = "float: right;">Facebook</h1>  
+                    </a>                            
+    <a href="https://www.facebook.com/">                                   
+    <img src="Timages/facebook.png" class="gallery__img" alt="Image 1" >
+      </a>                                                                   
+  </figure>
+                                                        
+  <figure class="gallery__item gallery__item--2">
+         <a href="https://www.instagram.com/">
+                 <h1 style = "float: right;">Instagram</h1>
+             </a>
+      <a href="https://www.instagram.com/">
+    <img src="Timages/instagram.jpg" class="gallery__img" alt="Image 2">              </a>  
+  </figure>           
+                                                                       
+  <figure class="gallery__item gallery__item--3">
+             <a href="https://www.linkedin.com/">                       
+            <h1 style = "float: right;">LinkedIn </h1>   
+                </a>   
+                <a href="https://www.linkedin.com/"> 
+    <img src="Timages/linkedin.jpg" class="gallery__img" alt="Image 3">
+         </a>
+  </figure>
+                                                                      
+  <figure class="gallery__item gallery__item--4">
+             <a href="https://www.reddit.com/">                       
+            <h1 style = "float: right;">Reddit</h1>   
+                </a>   
+      <a href="https://www.reddit.com/">               
+    <img src="Timages/reddit.jpg" class="gallery__img" alt="Image 4">
+                </a>
+  </figure>
+  <figure class="gallery__item gallery__item--5">
+             <a href="https://www.snapchat.com/">                       
+            <h1 style = "float: right;">Snapchat</h1>   
+                </a>   
+      <a href="https://www.snapchat.com/"> 
+    <img src="Timages/snapchat.jpg" class="gallery__img" alt="Image 5">
+                     </a>
+  </figure>
+  <figure class="gallery__item gallery__item--6">
+             <a href="https://www.twitter.com/">                       
+            <h1 style = "float: right;">Twitter</h1>   
+                </a> 
+                <a href="https://www.twitter.com/">
+    <img src="Timages/twitter.jpg" class="gallery__img" alt="Image 6">
+                    </a>
+  </figure>
+</div>                                                              </div> </div>
+                                                                     
+
+<h1> What is your favorite social media? </h1>
+<form action="social.php">
+ <label for="fav">What is your favorite social media?</label> <br>      
+<input type="text" id="fav" name="fav" value="Ex. Facebook">
+<input type="submit" value="submit">
+</form>           
+                                   <br><br>
+
+<div class="footer">
+  <h2><h2>&copy; HyperText Assasins </h2></h2>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

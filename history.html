@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+</style > 
+</head>
+<body>
+  <div class="header">
+    <h1>Social Media</h1>
+    <p>on the web</p>
+        </div>
+        <div class="navbar">
+          <a href="index.html" class="active">Home</a>
+          <a href="whatis.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="#" class="right">Log in</a>
+          <a href="#" class="right">Sign up</a>
+        </div>
+
+    <br> 
+    
+    <button  class="accordition"> <div id = "history"> </div></button>
+    
+
+     
+    
+      </div>
+      
+      <div class="portfolio">
+        <div class="portfolio__item">
+          <img src="Mimages/image3.jpg" alt="" class="portfolio__image">
+          <div class="portfolio__desc">
+            <h3 class="portfolio__title"></h3>
+            <a href="#portfolio-item-1" class="button" role="button">More info</a>
+          </div>
+          
+      
+        </div>
+        <div class="portfolio__item" id="portfolio">
+          <img src="Mimages/image1.png" alt="" class="portfolio__image">
+          <div class="portfolio__desc">
+            <h3 class="portfolio__title"></h3>
+            <a href="#portfolio-item-2" class="button">More info</a>
+          </div>
+        </div>
+        <div class="portfolio__item">
+          <img src="MImages/image2.jpg" alt="" class="portfolio__image">
+          <div class="portfolio__desc">
+            <h3 class="portfolio__title"></h3>
+            <a href="#portfolio-item-3" class="button">More info</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio-lightbox" id="portfolio-item-1">
+        <div class="portfolio-lightbox__content">
+        <a href="#portfolio" class="close"></a> 
+        <img class="portfolio-lightbox__image" src="" alt="">
+        <h3 class="portfolio__title"></h3>
+        <p class="portfolio__body">
+          The first recognizable social media site, Six Degrees, was created in 1997
+        </p>
+        </div>
+      </div> 
+      
+      <div class="portfolio-lightbox" id="portfolio-item-2">
+        <div class="portfolio-lightbox__content">
+          <a href="#portfolio" class="close"></a>
+          <img class="portfolio-lightbox__image" src="" alt="">
+          <h3 class="portfolio__title"></h3>
+          <p class="portfolio__body">
+            Andrew Weinreich is an American serial entrepreneur. He is a pioneer in the field of social networking and has been starting and building businesses since 1997
+          </p>
+        </div>
+      </div> 
+      
+      <div class="portfolio-lightbox" id="portfolio-item-3">
+        <div class="portfolio-lightbox__content">
+        <a href="#portfolio" class="close"></a>
+        <img class="portfolio-lightbox__image" src="" alt="">
+        <h3 class="portfolio__title"></h3>
+        <p class="portfolio__body">
+          "What is interesting is the power and the impact of social media... So we must try to use social media in a good way."
+        </p>
+        </div>
+      </div> 
+          
+
+      <style>
+        *, *::before, *::after {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+        }
+        
+        .basic-example {
+          display: flex;
+        }
+        
+        .text p:target { background: red; }
+        
+        
+        .button {
+          display: inline-block;
+          text-decoration: none;
+          color: white;
+          background: rgb(225, 38, 25);
+          padding: .5em 1.25em;
+        }
+        
+        .portfolio {
+          display: grid;
+          grid: auto / repeat(auto-fit, minmax(15em, 1fr));
+          grid-gap: 1em;
+          background: rgb(11, 10, 10);
+          padding: 7em 4em;
+        }
+        
+        .portfolio__item {
+          position: relative;
+          flex-basis: 30%;
+          margin: 0;
+          padding: 0;
+          background: white;
+        }
+        
+        .portfolio__desc {
+          padding: 1.5em;
+        }
+        
+        .portfolio__title {
+          font-family: 'Roboto Condensed', sans-srif;
+          font-size: 1.5em;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-top: 0;
+        }
+        
+        .portfolio__image,
+        .portfolio-lightbox__image{
+          width: 100%;
+          display: block;
+        }
+        
+        .portfolio-lightbox {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: scale(0,1); 
+          transition: transform 150ms ease-in-out;
+          transform-origin: right; 
+          padding: 2em;
+          position: fixed;
+          top: 0;
+          left: 0;
+          color: white;
+          background: rgba(0, 0, 0, .5);
+          // box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .25);
+          width: 100vw;
+          height: 100vh;
+          z-index: 10;
+        }
+        
+        .portfolio-lightbox:target {
+          transform: scale(1,1);
+          transform-origin: left; 
+        
+        }
+        
+        .portfolio-lightbox__content {
+          width: 75%;
+          padding: 1em;
+          background: black;
+          position: relative;
+        }
+        
+        .portfolio__lightbox__image { margin-bottom: 1em; }
+        
+        .close {
+          position: absolute;
+          right: -1em;
+          top: -1em;
+          border: white 2px solid;
+          display: flex;
+          width: 2em;
+          height: 2em;
+          background: red;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+        }
+        
+        .close::after {
+          content: 'x';
+          color: white;
+        }</style>
+        
